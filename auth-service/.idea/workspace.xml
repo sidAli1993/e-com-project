@@ -77,40 +77,42 @@
   &quot;associatedIndex&quot;: 2
 }</component>
   <component name="ProjectId" id="2qca5dtHjIwv4kyyqoh1wFYW7wn" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.Build auth-service.executor": "Run",
-    "Gradle.Build demo-service.executor": "Run",
-    "Gradle.Build discovery-service.executor": "Run",
-    "Gradle.Build gateway-service.executor": "Run",
-    "Gradle.Build products_service.executor": "Run",
-    "Kotlin.AuthServiceApplicationKt.executor": "Run",
-    "Kotlin.DemoServiceApplicationKt.executor": "Run",
-    "Kotlin.DiscoveryServiceApplicationKt.executor": "Run",
-    "Kotlin.GatewayServiceApplicationKt.executor": "Run",
-    "Kotlin.ProductsServiceApplicationKt.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "full.screen.before.presentation.mode": "false",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Muhammad Isa/Downloads/ecom_project",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.Build auth-service.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build demo-service.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build discovery-service.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build gateway-service.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build products_service.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.AuthServiceApplicationKt.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.DemoServiceApplicationKt.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.DiscoveryServiceApplicationKt.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.GatewayServiceApplicationKt.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.ProductsServiceApplicationKt.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Muhammad Isa/Downloads/ecom_project&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
   },
-  "keyToStringList": {
-    "kotlin-gradle-user-dirs": [
-      "C:\\Users\\Muhammad Isa\\.gradle"
+  &quot;keyToStringList&quot;: {
+    &quot;kotlin-gradle-user-dirs&quot;: [
+      &quot;C:\\Users\\Muhammad Isa\\.gradle&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Muhammad Isa\Downloads\ecom_project\products_service\src\main\kotlin\com\sidalitech\products_service\common" />
@@ -235,7 +237,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="e-com project" />
     <MESSAGE value="e-com project complete" />
-    <option name="LAST_COMMIT_MESSAGE" value="e-com project complete" />
+    <MESSAGE value="cart-service implementation completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="cart-service implementation completed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -324,16 +327,6 @@
           <url>file://$PROJECT_DIR$/src/main/kotlin/com/sidalitech/auth_service/service/AuthService.kt</url>
           <line>60</line>
           <option name="timeStamp" value="45" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/../products_service/src/main/kotlin/com/sidalitech/products_service/repository/impl/ProductRepositoryCustomImpl.kt</url>
-          <line>36</line>
-          <option name="timeStamp" value="47" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/../products_service/src/main/kotlin/com/sidalitech/products_service/repository/impl/ProductRepositoryCustomImpl.kt</url>
-          <line>43</line>
-          <option name="timeStamp" value="51" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
