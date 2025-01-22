@@ -195,6 +195,21 @@ class ProductController {
             data = products
         )
     }
+    @GetMapping("/ids")
+    fun getByIds(
+        @RequestParam ids:List<String>
+    ): ResponseEntity<BaseResponse<Any>> {
+        val products = runBlocking(Dispatchers.IO) {
+            productService.findByIds(ids)
+        }
+        if (products.isEmpty()) throw Exception("products not found with this id")
+        return buildResponse(
+            "success",
+            "product found",
+            HttpStatus.OK,
+            data = products
+        )
+    }
 
     @PutMapping("update/{id}")
     fun updateProduct(@PathVariable id: String, @RequestBody product: Product): ResponseEntity<BaseResponse<Any>> {

@@ -2,6 +2,7 @@ package com.sidalitech.products_service.repository.impl
 
 import com.sidalitech.products_service.common.toNonNullMap
 import com.sidalitech.products_service.common.toNullableMap
+import com.sidalitech.products_service.model.Product
 import com.sidalitech.products_service.model.dto_response.DTOUsers
 import com.sidalitech.products_service.repository.custom_repo.ProductRepositoryCustom
 import com.sidalitech.products_service.service.ApiService
@@ -144,6 +145,31 @@ class ProductRepositoryCustomImpl(
         val productsMap=result.map { product->
             val vendorId=product["vendorId"] as String
             val user=userMap[vendorId]
+            if (user!=null){
+                product + ("user" to user)
+            }else{
+                product
+            }
+        }
+        emit(productsMap)
+    }
+
+    override suspend fun findByIds(ids: List<String>): Flow<List<Map<String, Any>>> = flow{
+        val aggregation=Aggregation.newAggregation(
+            Aggregation.match(Criteria.where("_id").`in`(ids)),
+            Aggregation.lookup("category","catId","_id","productCategory"),
+            Aggregation.unwind("productCategory",false)
+        )
+        val results= withContext(Dispatchers.IO){
+            mongoTemplate.aggregate(aggregation,"product",Map::class.java)
+                .mappedResults.filterIsInstance<Map<String,Any>>()
+        }
+        val vendorIds=results.map { it["vendorId"] as String }
+        val users= withContext(Dispatchers.IO){ apiService.getAllUsersByIds(vendorIds,"/auth/ids")}
+        val usersMap=users.data.associateBy { it.id }
+        val productsMap=results.map { product->
+            val vendorId=product["vendorId"] as String
+            val user=usersMap[vendorId]
             if (user!=null){
                 product + ("user" to user)
             }else{
