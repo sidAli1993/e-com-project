@@ -4,7 +4,41 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="27e94dd7-bd1c-4b86-a3db-7f1a4af7e096" name="Changes" comment="e-com project complete" />
+    <list default="true" id="27e94dd7-bd1c-4b86-a3db-7f1a4af7e096" name="Changes" comment="e-com project complete">
+      <change afterPath="$PROJECT_DIR$/../cart-service/src/main/kotlin/com/sidalitech/cart_service/common/Extensions.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cart-service/src/main/kotlin/com/sidalitech/cart_service/common/GlobalExceptionHandler.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cart-service/src/main/kotlin/com/sidalitech/cart_service/common/ResponseHelper.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cart-service/src/main/kotlin/com/sidalitech/cart_service/common/global_exception/NotFoundException.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cart-service/src/main/kotlin/com/sidalitech/cart_service/common/global_exception/UnauthorizedException.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cart-service/src/main/kotlin/com/sidalitech/cart_service/common/global_exception/ValidationException.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cart-service/src/main/kotlin/com/sidalitech/cart_service/config/FilterConfig.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cart-service/src/main/kotlin/com/sidalitech/cart_service/config/JwtCustomFilter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cart-service/src/main/kotlin/com/sidalitech/cart_service/config/WebClientConfig.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cart-service/src/main/kotlin/com/sidalitech/cart_service/controller/CartController.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cart-service/src/main/kotlin/com/sidalitech/cart_service/model/Cart.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cart-service/src/main/kotlin/com/sidalitech/cart_service/model/dto_model/DTOUsers.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cart-service/src/main/kotlin/com/sidalitech/cart_service/model/dto_model/ResponseWrapper.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cart-service/src/main/kotlin/com/sidalitech/cart_service/model/response_model/BaseResponse.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cart-service/src/main/kotlin/com/sidalitech/cart_service/repository/CartRepoCRUD.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cart-service/src/main/kotlin/com/sidalitech/cart_service/repository/CartRepository.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cart-service/src/main/kotlin/com/sidalitech/cart_service/repository/impl/CartRepositoryImpl.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cart-service/src/main/kotlin/com/sidalitech/cart_service/service/ApiService.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cart-service/src/main/kotlin/com/sidalitech/cart_service/service/CartService.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cart-service/src/main/kotlin/com/sidalitech/cart_service/util/JwtContextHolder.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cart-service/src/main/kotlin/com/sidalitech/cart_service/util/JwtTokenProvider.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.11.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.11.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.11.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.11.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cart-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../cart-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gateway-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../gateway-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../order-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../order-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../products_service/src/main/kotlin/com/sidalitech/products_service/controller/ProductController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../products_service/src/main/kotlin/com/sidalitech/products_service/controller/ProductController.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../products_service/src/main/kotlin/com/sidalitech/products_service/repository/custom_repo/ProductRepositoryCustom.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../products_service/src/main/kotlin/com/sidalitech/products_service/repository/custom_repo/ProductRepositoryCustom.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../products_service/src/main/kotlin/com/sidalitech/products_service/repository/impl/ProductRepositoryCustomImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../products_service/src/main/kotlin/com/sidalitech/products_service/repository/impl/ProductRepositoryCustomImpl.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../products_service/src/main/kotlin/com/sidalitech/products_service/service/ProductService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../products_service/src/main/kotlin/com/sidalitech/products_service/service/ProductService.kt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,13 +82,18 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Kotlin Class" />
-        <option value="Kotlin Interface" />
         <option value="Kotlin Data Class" />
+        <option value="Kotlin Interface" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
     <option name="ROOT_SYNC" value="SYNC" />
   </component>
@@ -66,7 +105,7 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/sidAli1993/ecom-project.git&quot;,
+    &quot;url&quot;: &quot;https://github.com/sidAli1993/e-com-project.git&quot;,
     &quot;accountId&quot;: &quot;c30fec40-645d-431b-83e7-8873798872e4&quot;
   }
 }</component>
@@ -77,53 +116,63 @@
   &quot;associatedIndex&quot;: 2
 }</component>
   <component name="ProjectId" id="2qca5dtHjIwv4kyyqoh1wFYW7wn" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.Build auth-service.executor": "Run",
-    "Gradle.Build demo-service.executor": "Run",
-    "Gradle.Build discovery-service.executor": "Run",
-    "Gradle.Build gateway-service.executor": "Run",
-    "Gradle.Build products_service.executor": "Run",
-    "Kotlin.AuthServiceApplicationKt.executor": "Run",
-    "Kotlin.DemoServiceApplicationKt.executor": "Run",
-    "Kotlin.DiscoveryServiceApplicationKt.executor": "Run",
-    "Kotlin.GatewayServiceApplicationKt.executor": "Run",
-    "Kotlin.ProductsServiceApplicationKt.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "full.screen.before.presentation.mode": "false",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Muhammad Isa/Downloads/ecom_project",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.Build auth-service.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build cart-service.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build demo-service.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build discovery-service.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build gateway-service.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build order-service.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build products_service.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.AuthServiceApplicationKt.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.CartServiceApplicationKt.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.DemoServiceApplicationKt.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.DiscoveryServiceApplicationKt.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.GatewayServiceApplicationKt.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.OrderServiceApplicationKt.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.ProductsServiceApplicationKt.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;cart-service&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Muhammad Isa/Downloads/ecom_project/cart-service/src/main/kotlin/com/sidalitech/cart_service/common&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
   },
-  "keyToStringList": {
-    "kotlin-gradle-user-dirs": [
-      "C:\\Users\\Muhammad Isa\\.gradle"
+  &quot;keyToStringList&quot;: {
+    &quot;kotlin-gradle-user-dirs&quot;: [
+      &quot;C:\\Users\\Muhammad Isa\\.gradle&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Muhammad Isa\Downloads\ecom_project\cart-service\src\main\kotlin\com\sidalitech\cart_service\common" />
+      <recent name="C:\Users\Muhammad Isa\Downloads\ecom_project\cart-service\src\main\kotlin\com\sidalitech\cart_service\common\global_exception" />
+      <recent name="C:\Users\Muhammad Isa\Downloads\ecom_project\cart-service\src\main\kotlin\com\sidalitech\cart_service\util" />
+      <recent name="C:\Users\Muhammad Isa\Downloads\ecom_project\cart-service\src\main\kotlin\com\sidalitech\cart_service\config" />
       <recent name="C:\Users\Muhammad Isa\Downloads\ecom_project\products_service\src\main\kotlin\com\sidalitech\products_service\common" />
-      <recent name="C:\Users\Muhammad Isa\Downloads\ecom_project\demo-service\src\main\kotlin\com\sidalitech\demo_service\config" />
-      <recent name="C:\Users\Muhammad Isa\Downloads\ecom_project\gateway-service\src\main\kotlin\com\sidalitech\gateway_service\config" />
     </key>
     <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="com.sidalitech.cart_service.model.dto_model" />
+      <recent name="com.sidalitech.cart_service.service" />
+      <recent name="com.sidalitech.cart_service.model.response_model" />
       <recent name="com.sidalitech.products_service.utils" />
       <recent name="com.sidalitech.products_service.model.response_model" />
-      <recent name="com.sidalitech.gateway_service.config" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.DiscoveryServiceApplicationKt">
+  <component name="RunManager" selected="Kotlin.CartServiceApplicationKt">
     <configuration name="AuthServiceApplicationKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.sidalitech.auth_service.AuthServiceApplicationKt" />
       <module name="auth-service.main" />
@@ -131,9 +180,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DemoServiceApplicationKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.sidalitech.demo_service.DemoServiceApplicationKt" />
-      <module name="demo-service.main" />
+    <configuration name="CartServiceApplicationKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.sidalitech.cart_service.CartServiceApplicationKt" />
+      <module name="cart-service.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -161,11 +210,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin.DiscoveryServiceApplicationKt" />
-        <item itemvalue="Kotlin.ProductsServiceApplicationKt" />
+        <item itemvalue="Kotlin.CartServiceApplicationKt" />
         <item itemvalue="Kotlin.AuthServiceApplicationKt" />
+        <item itemvalue="Kotlin.ProductsServiceApplicationKt" />
         <item itemvalue="Kotlin.GatewayServiceApplicationKt" />
-        <item itemvalue="Kotlin.DemoServiceApplicationKt" />
+        <item itemvalue="Kotlin.DiscoveryServiceApplicationKt" />
       </list>
     </recent_temporary>
   </component>
@@ -218,7 +267,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736587482129</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="e-com project complete">
+      <option name="closed" value="true" />
+      <created>1736587671005</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1736587671005</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -327,13 +384,18 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/../products_service/src/main/kotlin/com/sidalitech/products_service/repository/impl/ProductRepositoryCustomImpl.kt</url>
-          <line>36</line>
+          <line>37</line>
           <option name="timeStamp" value="47" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/../products_service/src/main/kotlin/com/sidalitech/products_service/repository/impl/ProductRepositoryCustomImpl.kt</url>
-          <line>43</line>
+          <line>44</line>
           <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/../cart-service/src/main/kotlin/com/sidalitech/cart_service/service/CartService.kt</url>
+          <line>75</line>
+          <option name="timeStamp" value="62" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

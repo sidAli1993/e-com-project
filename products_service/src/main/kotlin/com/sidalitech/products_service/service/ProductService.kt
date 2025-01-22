@@ -65,6 +65,13 @@ class ProductService @Autowired constructor(
         }
         return products
     }
+    suspend fun findByIds(ids:List<String>):List<Map<String,Any>>{
+        val products= mutableListOf<Map<String,Any>>()
+        productRepositoryCustom.findByIds(ids).collect{
+            products.addAll(it)
+        }
+        return products
+    }
 
     suspend fun isExist(id: String): Boolean {
         return productRepository.existsById(id)
@@ -74,7 +81,6 @@ class ProductService @Autowired constructor(
         val api1 = runBlocking { apiService.getUserById("/auth/id/$id") }
         println(api1)
     }
-
     suspend fun updateProduct(id: String, product: Product): Product? {
         if (!isExist(id)) throw ValidationException("Product not exists")
         val query = Query(Criteria.where("id").`is`(id))
@@ -89,5 +95,4 @@ class ProductService @Autowired constructor(
         mongoTemplate.updateFirst(query, update, Product::class.java)
         return product
     }
-
 }
