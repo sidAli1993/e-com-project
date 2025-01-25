@@ -4,7 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="27e94dd7-bd1c-4b86-a3db-7f1a4af7e096" name="Changes" comment="e-com project complete" />
+    <list default="true" id="27e94dd7-bd1c-4b86-a3db-7f1a4af7e096" name="Changes" comment="e-com project complete">
+      <change afterPath="$PROJECT_DIR$/../order-service/src/main/kotlin/com/sidalitech/order_service/common/Extensions.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-service/src/main/kotlin/com/sidalitech/order_service/common/GlobalExceptionHandler.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-service/src/main/kotlin/com/sidalitech/order_service/common/ResponseHelper.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-service/src/main/kotlin/com/sidalitech/order_service/common/global_exception/NotFoundException.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-service/src/main/kotlin/com/sidalitech/order_service/common/global_exception/UnauthorizedException.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-service/src/main/kotlin/com/sidalitech/order_service/common/global_exception/ValidationException.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-service/src/main/kotlin/com/sidalitech/order_service/config/FilterConfig.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-service/src/main/kotlin/com/sidalitech/order_service/config/JwtCustomFilter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-service/src/main/kotlin/com/sidalitech/order_service/config/WebClientConfig.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-service/src/main/kotlin/com/sidalitech/order_service/model/dto_model/DTOUsers.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-service/src/main/kotlin/com/sidalitech/order_service/model/dto_model/ResponseWrapper.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-service/src/main/kotlin/com/sidalitech/order_service/model/response_model/BaseResponse.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-service/src/main/kotlin/com/sidalitech/order_service/service/ApiService.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-service/src/main/kotlin/com/sidalitech/order_service/util/JwtContextHolder.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-service/src/main/kotlin/com/sidalitech/order_service/util/JwtTokenProvider.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.11.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.11.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,6 +74,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
     <option name="ROOT_SYNC" value="SYNC" />
   </component>
@@ -84,42 +108,48 @@
     <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Gradle.Build auth-service.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Build demo-service.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Build discovery-service.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Build gateway-service.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Build products_service.executor&quot;: &quot;Run&quot;,
-    &quot;Kotlin.AuthServiceApplicationKt.executor&quot;: &quot;Run&quot;,
-    &quot;Kotlin.DemoServiceApplicationKt.executor&quot;: &quot;Run&quot;,
-    &quot;Kotlin.DiscoveryServiceApplicationKt.executor&quot;: &quot;Run&quot;,
-    &quot;Kotlin.GatewayServiceApplicationKt.executor&quot;: &quot;Run&quot;,
-    &quot;Kotlin.ProductsServiceApplicationKt.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Muhammad Isa/Downloads/ecom_project&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.Build auth-service.executor": "Run",
+    "Gradle.Build cart-service.executor": "Run",
+    "Gradle.Build demo-service.executor": "Run",
+    "Gradle.Build discovery-service.executor": "Run",
+    "Gradle.Build gateway-service.executor": "Run",
+    "Gradle.Build order-service.executor": "Run",
+    "Gradle.Build products_service.executor": "Run",
+    "Kotlin.AuthServiceApplicationKt.executor": "Run",
+    "Kotlin.DemoServiceApplicationKt.executor": "Run",
+    "Kotlin.DiscoveryServiceApplicationKt.executor": "Run",
+    "Kotlin.GatewayServiceApplicationKt.executor": "Run",
+    "Kotlin.ProductsServiceApplicationKt.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "full.screen.before.presentation.mode": "false",
+    "git-widget-placeholder": "order-service",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Muhammad Isa/Downloads/ecom_project/order-service/src/main/kotlin/com/sidalitech/order_service/config",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;kotlin-gradle-user-dirs&quot;: [
-      &quot;C:\\Users\\Muhammad Isa\\.gradle&quot;
+  "keyToStringList": {
+    "kotlin-gradle-user-dirs": [
+      "C:\\Users\\Muhammad Isa\\.gradle"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Muhammad Isa\Downloads\ecom_project\products_service\src\main\kotlin\com\sidalitech\products_service\common" />
-      <recent name="C:\Users\Muhammad Isa\Downloads\ecom_project\demo-service\src\main\kotlin\com\sidalitech\demo_service\config" />
-      <recent name="C:\Users\Muhammad Isa\Downloads\ecom_project\gateway-service\src\main\kotlin\com\sidalitech\gateway_service\config" />
+      <recent name="C:\Users\Muhammad Isa\Downloads\ecom_project\order-service\src\main\kotlin\com\sidalitech\order_service\config" />
+      <recent name="C:\Users\Muhammad Isa\Downloads\ecom_project\order-service\src\main\kotlin\com\sidalitech\order_service\common\global_exception" />
+      <recent name="C:\Users\Muhammad Isa\Downloads\ecom_project\order-service\src\main\kotlin\com\sidalitech\order_service\common" />
+      <recent name="C:\Users\Muhammad Isa\Downloads\ecom_project\order-service\src\main\kotlin\com\sidalitech\order_service\model\dto_model" />
+      <recent name="C:\Users\Muhammad Isa\Downloads\ecom_project\order-service\src\main\kotlin\com\sidalitech\order_service\util" />
     </key>
     <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="com.sidalitech.order_service.model.response_model" />
+      <recent name="com.sidalitech.order_service.service" />
       <recent name="com.sidalitech.products_service.utils" />
       <recent name="com.sidalitech.products_service.model.response_model" />
       <recent name="com.sidalitech.gateway_service.config" />
