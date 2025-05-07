@@ -37,6 +37,9 @@ class CartRepositoryImpl(
         return mongoTemplate.findOne(query,Cart::class.java)
     }
 
+    override suspend fun findById(id: String): Cart? {
+        return mongoTemplate.findById(id,Cart::class.java)    }
+
     override suspend fun removeCartItem(userId: String, productId: String): Cart {
         TODO("Not yet implemented")
     }

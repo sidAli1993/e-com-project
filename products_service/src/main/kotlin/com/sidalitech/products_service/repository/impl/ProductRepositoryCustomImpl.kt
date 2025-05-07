@@ -53,8 +53,8 @@ class ProductRepositoryCustomImpl(
 
         val productMap= mongoTemplate.aggregate(aggregation,"product",Map::class.java)
             .mappedResults.filterIsInstance<Map<String,Any>>().firstOrNull()
-
-        val vendorId= productMap?.get("vendorId") as String
+        if (productMap==null) return null
+        val vendorId= productMap["vendorId"] as String
         val user=apiService.getUserById("/auth/id/$vendorId")
         val updatedProductMap= productMap.toMutableMap().also { product->
             user?.let{
@@ -63,6 +63,7 @@ class ProductRepositoryCustomImpl(
         }
         return updatedProductMap
     }
+//kafka, sockets, scheduling,(((graphql))) , inner apis ke liay alg se token use karna bhter hai
 
     override suspend fun findAll(page:Int,size:Int): Flow<List<Map<String, Any>>> = flow{
         val toSkip=(page-1)*size

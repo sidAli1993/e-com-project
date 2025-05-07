@@ -10,6 +10,7 @@ interface CartRepository {
     suspend fun findAll(page:Int,size:Int): Flow<Map<String, Any>>
     suspend fun findByCartId(id:String):Cart
     suspend fun findByUserId(id:String):Cart?
+    suspend fun findById(id:String):Cart?
     suspend fun removeCartItem(userId:String,productId:String):Cart
     suspend fun removeCompleteUserCart(userId: String)
     suspend fun removeAllCarts()

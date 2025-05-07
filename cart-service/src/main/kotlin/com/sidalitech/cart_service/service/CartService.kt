@@ -29,88 +29,112 @@ class CartService @Autowired constructor(
         return cartRepository.findByUserId(userId)
     }
 
+    suspend fun getById(cartId: String): Cart? {
+        return cartRepository.findById(cartId)
+    }
+
     suspend fun save(userId: String, productObject: ProductObject): Map<String, Any> = withContext(Dispatchers.IO) {
-        val allCartProductsListToGetProductsResponse = mutableListOf(productObject)
-        val cart = checkIfCartExistsByUser(userId) ?: cartRepoCRUD.save(
-            Cart(
-                userId = userId,
-                cartProducts = mutableListOf(),
-                totalPrice = 0.0
+        var cart = checkIfCartExistsByUser(userId)
+        if (cart == null) {
+            cart = cartRepoCRUD.save(
+                Cart(
+                    userId = userId,
+                    cartProducts = mutableListOf(productObject),
+                    totalPrice = (productObject.price * productObject.quantity)
+                )
             )
-        ).also {
-            allCartProductsListToGetProductsResponse.addAll(it.cartProducts)
-        }
-        val productIds = allCartProductsListToGetProductsResponse.groupBy { it.productId }
-        println("productsIds $productIds")
-        val productMapById =
-            apiService.getAllProductsByIds(productIds.keys.toList(), "/product/ids").data.let {
-                it.associateBy {p-> p["_id"] as String }
-            }
-//        println(productsResponse)
-//        val productMapById = productsResponse.associateBy { it["_id"] as String }
-        val priceOfCorrespondingProduct = productMapById[productObject.productId]?.get("price") as Double
-        val updatedProdCartObjects = amendQtyOfDuplicateProducts(cart, productObject, priceOfCorrespondingProduct)
-        update(
-            Cart(
-                userId = userId,
-                cartProducts = updatedProdCartObjects,
-                totalPrice = cart.totalPrice
-            )
-        )
+        } else {
+            val checkIfProductExistsInCart = cart.cartProducts.find { it.productId == productObject.productId }
+            if (checkIfProductExistsInCart == null) {
+                var existingTotalPrice = cart.totalPrice
+                val existingCartProducts = cart.cartProducts
+                existingCartProducts.add(productObject)
+                existingTotalPrice += (productObject.price * productObject.quantity)
+                cart.totalPrice = existingTotalPrice
 
-
-        val cartProducts = cart.cartProducts.mapNotNull { cartProduct ->
-            val prodId = cartProduct.productId
-            val correspondingProduct = productMapById[prodId]
-            correspondingProduct?.toMutableMap()?.apply {
-                put("quantity", cartProduct.quantity)
+            } else {
+                var existingTotalPrice = cart.totalPrice
+                existingTotalPrice -= (checkIfProductExistsInCart.price * checkIfProductExistsInCart.quantity)
+                checkIfProductExistsInCart.quantity = productObject.quantity
+                checkIfProductExistsInCart.price = productObject.price
+                existingTotalPrice += (productObject.price * productObject.quantity)
+                cart.totalPrice = existingTotalPrice
             }
         }
+        update(cart)
+//        prepare response map
+        val productIds=cart.cartProducts.groupBy { it.productId }
+        val productsMapById=apiService.getAllProductsByIds(productIds.keys.toList(),"/product/ids").data.let {
+            it.associateBy { p-> p["_id"] as String }
+        }
 
+        val finalResponse=cart.cartProducts.map {
+            mapOf("quantity" to it.quantity,
+                "price" to it.price,
+                "product" to productsMapById[it.productId]
+            )
+        }
         val finalMap = mapOf(
-            "id" to cart.id.toString(),
+            "message" to "cart has been updated successfully",
             "userId" to cart.userId,
             "totalPrice" to cart.totalPrice,
-            "products" to cartProducts
+            "products" to finalResponse
         )
         finalMap
     }
 
-    suspend fun decreaseQty(userId: String, prodId: String) : Map<String, Any> =
-        withContext(Dispatchers.IO) {
-            val cart = checkIfCartExistsByUser(userId) ?: throw IllegalArgumentException("cart not exists")
-            val prod = cart.cartProducts.find { it.productId == prodId }
-            prod?.let { p ->
-                if (p.quantity > 1) {
-                    val productsResponse =
-                        apiService.getAllProductsByIds(listOf(p.productId), "/product/ids").data
-                    val prodMap = productsResponse.associateBy { it["_id"] as String }
-                    val correspondProdPrice = prodMap[prodId]?.get("price") as Double
-                   val minusAmountFromTotalPrice = p.quantity * correspondProdPrice
-                    cart.totalPrice-=minusAmountFromTotalPrice
-                    cart.totalPrice += minusAmountFromTotalPrice-correspondProdPrice
-                    cart.cartProducts.find { it.productId==p.productId }?.apply {
-                        this.quantity -= 1
-                    }
-                    update(cart)
-                } else {
-                    removeProduct(p.productId, userId)
-                }
-            }
-            mapOf("cart" to cart)
+    suspend fun getCart(userId: String):Map<String,Any>{
+        val cart= checkIfCartExistsByUser(userId) ?: return mapOf<String,Any>()
+        val productsIds=cart.cartProducts.groupBy { it.productId }
+        val productsMapById=apiService.getAllProductsByIds(productsIds.keys.toList(),"/product/ids").data.let {
+            it.associateBy { p-> p["_id"] as String }
         }
+        val finalResponse=cart.cartProducts.map {
+            "price" to it.price
+            "quantity" to it.quantity
+            "product" to productsMapById[it.productId]
+        }
+        val response= mapOf(
+            "message" to "user cart details",
+            "userId" to cart.userId,
+            "totalPrice" to cart.totalPrice,
+            "products" to finalResponse
+        )
 
+        return response
+    }
+
+    suspend fun getCartById(cartId: String):Map<String,Any>{
+        val cart= getById(cartId) ?: return mapOf<String,Any>()
+        val productsIds=cart.cartProducts.groupBy { it.productId }
+        val productsMapById=apiService.getAllProductsByIds(productsIds.keys.toList(),"/product/ids").data.let {
+            it.associateBy { p-> p["_id"] as String }
+        }
+        val finalResponse=cart.cartProducts.map {
+            mapOf(
+                "price" to it.price,
+                "quantity" to it.quantity,
+                "product" to productsMapById[it.productId]
+            )
+        }
+        val response= mapOf(
+            "message" to "user cart details",
+            "userId" to cart.userId,
+            "totalPrice" to cart.totalPrice,
+            "products" to finalResponse
+        )
+
+        return response
+    }
 
     suspend fun removeProduct(prodId: String, userId: String): Map<String, Any> {
         val cart = checkIfCartExistsByUser(userId) ?: throw IllegalArgumentException("cart not exists")
-        val prod = cart.cartProducts.find { it.productId == prodId }
-        val productsResponse =
-            apiService.getAllProductsByIds(listOf(prod?.productId.toString()), "/product/ids").data
-        val prodMap = productsResponse.associateBy { it["_id"] as String }
-        val correspondProdPrice = prodMap[prodId]?.get("price") as Double
-        cart.totalPrice -= (correspondProdPrice * (prod?.quantity ?: 1))
-        cart.cartProducts.remove(prod)
-        update(cart)
+        val product=cart.cartProducts.find { it.productId==prodId }
+        if (product!=null){
+            cart.totalPrice-= (product.price * product.quantity)
+            cart.cartProducts.removeIf { it.productId == prodId }
+            update(cart)
+        }
         return mapOf("cart" to cart)
     }
 
@@ -126,30 +150,4 @@ class CartService @Autowired constructor(
         return mongoTemplate.findAndModify(query, update, Cart::class.java)
             ?: throw ClassNotFoundException("Cart not found for userId: ${cart.userId}")  // Handle case where cart is not found
     }
-
-    private fun amendQtyOfDuplicateProducts(
-        cart: Cart,
-        pObj: ProductObject,
-        priceOfCurrentProduct: Double
-    ): MutableList<ProductObject> {
-        val productsList: MutableList<ProductObject> = cart.cartProducts
-        val productExists = productsList.find { it.productId == pObj.productId }
-
-        if (productExists != null) {
-            // Adjust the total price by subtracting the existing product's price
-            cart.totalPrice -= productExists.quantity * priceOfCurrentProduct
-
-            // Update the quantity of the existing product
-            productExists.quantity += pObj.quantity
-
-            // Add the updated price based on the new quantity
-            cart.totalPrice += productExists.quantity * priceOfCurrentProduct
-        } else {
-            cart.totalPrice += pObj.quantity * priceOfCurrentProduct
-            productsList.add(pObj)
-        }
-
-        return productsList
-    }
-
 }

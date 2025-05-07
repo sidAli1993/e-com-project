@@ -4,7 +4,76 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="27e94dd7-bd1c-4b86-a3db-7f1a4af7e096" name="Changes" comment="e-com project complete" />
+    <list default="true" id="27e94dd7-bd1c-4b86-a3db-7f1a4af7e096" name="Changes" comment="order-service implementation">
+      <change afterPath="$PROJECT_DIR$/../PracticeKotlin/src/ArrayPorblemSeven.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PracticeKotlin/src/ArrayProblemEight.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PracticeKotlin/src/ArrayProblemEighteen.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PracticeKotlin/src/ArrayProblemEleven.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PracticeKotlin/src/ArrayProblemFifteen.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PracticeKotlin/src/ArrayProblemFive.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PracticeKotlin/src/ArrayProblemFour.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PracticeKotlin/src/ArrayProblemFourteen.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PracticeKotlin/src/ArrayProblemNine.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PracticeKotlin/src/ArrayProblemNineteen.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PracticeKotlin/src/ArrayProblemOne.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PracticeKotlin/src/ArrayProblemSeventeen.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PracticeKotlin/src/ArrayProblemSix.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PracticeKotlin/src/ArrayProblemSixteen.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PracticeKotlin/src/ArrayProblemTen.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PracticeKotlin/src/ArrayProblemThree.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PracticeKotlin/src/ArrayProblemTwelve.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PracticeKotlin/src/ArrayProblemTwo.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PracticeKotlin/src/ArrayproblemThirteen.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PracticeKotlin/src/CollectionsPracticeOne.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PracticeKotlin/src/InsertionSortAlgo.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PracticeKotlin/src/ReduceCollectionPractice.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PracticeKotlin/src/SelectionSort.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PracticeKotlin/src/SortObject.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PracticeKotlin/src/StringProblemOne.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PracticeKotlin/src/ZipCollections.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PracticeKotlin/src/binary_tree/BinaryTree.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PracticeKotlin/src/binary_tree/BinaryTreeInOrder.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PracticeKotlin/src/binary_tree/BinaryTreeLevelTraversal.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PracticeKotlin/src/binary_tree/BinaryTreeLevelTraversalTwo.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PracticeKotlin/src/bt_updated/BTExamples.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PracticeKotlin/src/bt_updated/MQueue.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PracticeKotlin/src/bt_updated/MStack.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PracticeKotlin/src/leet_code/LeetCodeProblemOne.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PracticeKotlin/src/leet_code/LeetCodeProblemTwo.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PracticeKotlin/src/linked_list/LinkedListOne.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PracticeKotlin/src/linked_list/double/DoublyLinkedList.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-service/src/main/kotlin/com/sidalitech/order_service/controller/OrderController.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-service/src/main/kotlin/com/sidalitech/order_service/enums/OrderStatus.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-service/src/main/kotlin/com/sidalitech/order_service/enums/PaymentStatus.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-service/src/main/kotlin/com/sidalitech/order_service/model/Order.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-service/src/main/kotlin/com/sidalitech/order_service/model/dto_model/DTOOrder.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-service/src/main/kotlin/com/sidalitech/order_service/model/response_model/TempCart.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-service/src/main/kotlin/com/sidalitech/order_service/model/response_model/order/CartResponseModel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-service/src/main/kotlin/com/sidalitech/order_service/model/response_model/order/Product.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-service/src/main/kotlin/com/sidalitech/order_service/model/response_model/order/ProductCategory.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-service/src/main/kotlin/com/sidalitech/order_service/model/response_model/order/ProductX.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-service/src/main/kotlin/com/sidalitech/order_service/model/response_model/order/User.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-service/src/main/kotlin/com/sidalitech/order_service/reposittory/OrderRepository.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-service/src/main/kotlin/com/sidalitech/order_service/service/OrderService.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-service/src/main/kotlin/com/sidalitech/order_service/util/Utils.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.11.1/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.11.1/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.11.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.11.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.11.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.11.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cart-service/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/../cart-service/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cart-service/src/main/kotlin/com/sidalitech/cart_service/controller/CartController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../cart-service/src/main/kotlin/com/sidalitech/cart_service/controller/CartController.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cart-service/src/main/kotlin/com/sidalitech/cart_service/model/Cart.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../cart-service/src/main/kotlin/com/sidalitech/cart_service/model/Cart.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cart-service/src/main/kotlin/com/sidalitech/cart_service/repository/CartRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../cart-service/src/main/kotlin/com/sidalitech/cart_service/repository/CartRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cart-service/src/main/kotlin/com/sidalitech/cart_service/repository/impl/CartRepositoryImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../cart-service/src/main/kotlin/com/sidalitech/cart_service/repository/impl/CartRepositoryImpl.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cart-service/src/main/kotlin/com/sidalitech/cart_service/service/CartService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../cart-service/src/main/kotlin/com/sidalitech/cart_service/service/CartService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gateway-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../gateway-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../order-service/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/../order-service/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../order-service/src/main/kotlin/com/sidalitech/order_service/config/WebClientConfig.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../order-service/src/main/kotlin/com/sidalitech/order_service/config/WebClientConfig.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../order-service/src/main/kotlin/com/sidalitech/order_service/service/ApiService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../order-service/src/main/kotlin/com/sidalitech/order_service/service/ApiService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../products_service/src/main/kotlin/com/sidalitech/products_service/repository/impl/ProductRepositoryCustomImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../products_service/src/main/kotlin/com/sidalitech/products_service/repository/impl/ProductRepositoryCustomImpl.kt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,13 +117,20 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Kotlin Class" />
+        <option value="Kotlin Enum" />
         <option value="Kotlin Interface" />
+        <option value="Kotlin Class" />
         <option value="Kotlin Data Class" />
+        <option value="Kotlin File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
     <option name="ROOT_SYNC" value="SYNC" />
   </component>
@@ -66,7 +142,7 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/sidAli1993/ecom-project.git&quot;,
+    &quot;url&quot;: &quot;https://github.com/sidAli1993/e-com-project.git&quot;,
     &quot;accountId&quot;: &quot;c30fec40-645d-431b-83e7-8873798872e4&quot;
   }
 }</component>
@@ -84,48 +160,56 @@
     <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Gradle.Build auth-service.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Build demo-service.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Build discovery-service.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Build gateway-service.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Build products_service.executor&quot;: &quot;Run&quot;,
-    &quot;Kotlin.AuthServiceApplicationKt.executor&quot;: &quot;Run&quot;,
-    &quot;Kotlin.DemoServiceApplicationKt.executor&quot;: &quot;Run&quot;,
-    &quot;Kotlin.DiscoveryServiceApplicationKt.executor&quot;: &quot;Run&quot;,
-    &quot;Kotlin.GatewayServiceApplicationKt.executor&quot;: &quot;Run&quot;,
-    &quot;Kotlin.ProductsServiceApplicationKt.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Muhammad Isa/Downloads/ecom_project&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.Build auth-service.executor": "Run",
+    "Gradle.Build cart-service.executor": "Run",
+    "Gradle.Build demo-service.executor": "Run",
+    "Gradle.Build discovery-service.executor": "Run",
+    "Gradle.Build gateway-service.executor": "Run",
+    "Gradle.Build order-service.executor": "Run",
+    "Gradle.Build products_service.executor": "Run",
+    "Kotlin.AuthServiceApplicationKt.executor": "Run",
+    "Kotlin.CartServiceApplicationKt.executor": "Run",
+    "Kotlin.DemoServiceApplicationKt.executor": "Run",
+    "Kotlin.DiscoveryServiceApplicationKt.executor": "Run",
+    "Kotlin.GatewayServiceApplicationKt.executor": "Run",
+    "Kotlin.OrderServiceApplicationKt.executor": "Run",
+    "Kotlin.ProductsServiceApplicationKt.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "full.screen.before.presentation.mode": "false",
+    "git-widget-placeholder": "order-service",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Muhammad Isa/Downloads/ecom_project/order-service/src/main/kotlin/com/sidalitech/order_service/config",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;kotlin-gradle-user-dirs&quot;: [
-      &quot;C:\\Users\\Muhammad Isa\\.gradle&quot;
+  "keyToStringList": {
+    "kotlin-gradle-user-dirs": [
+      "C:\\Users\\Muhammad Isa\\.gradle"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Muhammad Isa\Downloads\ecom_project\products_service\src\main\kotlin\com\sidalitech\products_service\common" />
-      <recent name="C:\Users\Muhammad Isa\Downloads\ecom_project\demo-service\src\main\kotlin\com\sidalitech\demo_service\config" />
-      <recent name="C:\Users\Muhammad Isa\Downloads\ecom_project\gateway-service\src\main\kotlin\com\sidalitech\gateway_service\config" />
+      <recent name="C:\Users\Muhammad Isa\Downloads\ecom_project\order-service\src\main\kotlin\com\sidalitech\order_service\config" />
+      <recent name="C:\Users\Muhammad Isa\Downloads\ecom_project\order-service\src\main\kotlin\com\sidalitech\order_service\common\global_exception" />
+      <recent name="C:\Users\Muhammad Isa\Downloads\ecom_project\order-service\src\main\kotlin\com\sidalitech\order_service\common" />
+      <recent name="C:\Users\Muhammad Isa\Downloads\ecom_project\order-service\src\main\kotlin\com\sidalitech\order_service\model\dto_model" />
+      <recent name="C:\Users\Muhammad Isa\Downloads\ecom_project\order-service\src\main\kotlin\com\sidalitech\order_service\util" />
     </key>
     <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="com.sidalitech.order_service.model.response_model" />
+      <recent name="com.sidalitech.order_service.service" />
       <recent name="com.sidalitech.products_service.utils" />
       <recent name="com.sidalitech.products_service.model.response_model" />
       <recent name="com.sidalitech.gateway_service.config" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.DiscoveryServiceApplicationKt">
+  <component name="RunManager" selected="Kotlin.OrderServiceApplicationKt">
     <configuration name="AuthServiceApplicationKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.sidalitech.auth_service.AuthServiceApplicationKt" />
       <module name="auth-service.main" />
@@ -133,16 +217,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DemoServiceApplicationKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.sidalitech.demo_service.DemoServiceApplicationKt" />
-      <module name="demo-service.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DiscoveryServiceApplicationKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.sidalitech.discovery_service.DiscoveryServiceApplicationKt" />
-      <module name="discovery-service.main" />
+    <configuration name="CartServiceApplicationKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.sidalitech.cart_service.CartServiceApplicationKt" />
+      <module name="cart-service.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -150,6 +227,13 @@
     <configuration name="GatewayServiceApplicationKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.sidalitech.gateway_service.GatewayServiceApplicationKt" />
       <module name="gateway-service.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderServiceApplicationKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.sidalitech.order_service.OrderServiceApplicationKt" />
+      <module name="order-service.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -163,11 +247,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin.DiscoveryServiceApplicationKt" />
+        <item itemvalue="Kotlin.OrderServiceApplicationKt" />
+        <item itemvalue="Kotlin.CartServiceApplicationKt" />
+        <item itemvalue="Kotlin.GatewayServiceApplicationKt" />
         <item itemvalue="Kotlin.ProductsServiceApplicationKt" />
         <item itemvalue="Kotlin.AuthServiceApplicationKt" />
-        <item itemvalue="Kotlin.GatewayServiceApplicationKt" />
-        <item itemvalue="Kotlin.DemoServiceApplicationKt" />
       </list>
     </recent_temporary>
   </component>
@@ -220,7 +304,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736587482129</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="order-service implementation">
+      <option name="closed" value="true" />
+      <created>1737802939375</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1737802939375</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -238,7 +330,8 @@
     <MESSAGE value="e-com project" />
     <MESSAGE value="e-com project complete" />
     <MESSAGE value="cart-service implementation completed" />
-    <option name="LAST_COMMIT_MESSAGE" value="cart-service implementation completed" />
+    <MESSAGE value="order-service implementation" />
+    <option name="LAST_COMMIT_MESSAGE" value="order-service implementation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -294,16 +387,6 @@
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/../products_service/src/main/kotlin/com/sidalitech/products_service/utils/JwtTokenProvider.kt</url>
-          <line>61</line>
-          <option name="timeStamp" value="23" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/../products_service/src/main/kotlin/com/sidalitech/products_service/utils/JwtTokenProvider.kt</url>
-          <line>66</line>
-          <option name="timeStamp" value="24" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/main/kotlin/com/sidalitech/auth_service/controller/AuthController.kt</url>
           <line>59</line>
           <option name="timeStamp" value="32" />
@@ -328,7 +411,27 @@
           <line>60</line>
           <option name="timeStamp" value="45" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/../cart-service/src/main/kotlin/com/sidalitech/cart_service/service/CartService.kt</url>
+          <line>126</line>
+          <option name="timeStamp" value="66" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/../order-service/src/main/kotlin/com/sidalitech/order_service/controller/OrderController.kt</url>
+          <line>44</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="67" />
+        </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="com.mongodb.MongoSocketWriteException" package="com.mongodb" />
+          <option name="timeStamp" value="46" />
+        </breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/auth_service$DiscoveryServiceApplicationKt.ic" NAME="DiscoveryServiceApplicationKt Coverage Results" MODIFIED="1745832963447" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
   </component>
 </project>

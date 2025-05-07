@@ -26,4 +26,6 @@ data class ProductObject(
     val productId:String,
     @NotBlank(message = "quantity must not be empty")
     var quantity:Int,
+    @NotBlank(message = "price must not be empty")
+    var price:Double,
 )
