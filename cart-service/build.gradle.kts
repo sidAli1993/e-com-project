@@ -1,7 +1,7 @@
 plugins {
 	kotlin("jvm") version "1.9.25"
 	kotlin("plugin.spring") version "1.9.25"
-	id("org.springframework.boot") version "3.4.1"
+	id("org.springframework.boot") version "3.4.2"
 	id("io.spring.dependency-management") version "1.1.7"
 }
 
@@ -46,6 +46,8 @@ dependencies {
 	implementation ("com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.15.2")
 	implementation ("io.projectreactor.kotlin:reactor-kotlin-extensions:1.1.7")
 	implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.2")
+
+
 }
 
 dependencyManagement {

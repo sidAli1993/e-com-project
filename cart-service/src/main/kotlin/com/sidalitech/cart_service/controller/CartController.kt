@@ -13,6 +13,8 @@ import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.DeleteMapping
+import org.springframework.web.bind.annotation.GetMapping
+import org.springframework.web.bind.annotation.PathVariable
 import org.springframework.web.bind.annotation.PostMapping
 import org.springframework.web.bind.annotation.RequestBody
 import org.springframework.web.bind.annotation.RequestMapping
@@ -28,13 +30,33 @@ class CartController @Autowired constructor(private val cartService: CartService
     fun save(@Valid @RequestBody productObject: ProductObject):ResponseEntity<BaseResponse<Any>>{
         val userId=jwtTokenProvider.getIdFromToken(JwtContextHolder.getToken() ?: "")
         val cartResponse= runBlocking {  cartService.save(userId,productObject) }
-//        runBlocking { cartService.decreaseQty(userId,productObject.productId) }
-//        runBlocking { cartService.removeProduct(productObject.productId,userId) }
-//        runBlocking { cartService.removeCart("6462421c-6c23-4d6a-b469-a8d20605b37c") }
         return buildResponse(
             "success",
             "cart item added successfully",
             HttpStatus.CREATED,
+            data = cartResponse
+        )
+    }
+
+    @GetMapping()
+    fun getCart():ResponseEntity<BaseResponse<Any>>{
+        val userId=jwtTokenProvider.getIdFromToken(JwtContextHolder.getToken() ?: "")
+        val cartResponse= runBlocking {  cartService.getCart(userId) }
+        return buildResponse(
+            "success",
+            "cart items of user",
+            HttpStatus.OK,
+            data = cartResponse
+        )
+    }
+
+    @GetMapping("/getCartById")
+    fun getCartById(@RequestParam cartId:String):ResponseEntity<BaseResponse<Any>>{
+        val cartResponse= runBlocking {  cartService.getCartById(cartId) }
+        return buildResponse(
+            "success",
+            "cart items of this id",
+            HttpStatus.OK,
             data = cartResponse
         )
     }
@@ -63,17 +85,4 @@ class CartController @Autowired constructor(private val cartService: CartService
             data = "cart is cleared"
         )
     }
-
-    @PostMapping("/decrease-qty")
-    fun decreaseQty(@RequestParam productId:String):ResponseEntity<BaseResponse<Any>>{
-        val userId=jwtTokenProvider.getIdFromToken(JwtContextHolder.getToken() ?: throw IllegalArgumentException("token is invalid"))
-        val resp= runBlocking { cartService.decreaseQty(userId,productId) }
-        return buildResponse(
-            "success",
-            "quantity decreased",
-            HttpStatus.CREATED,
-            data = resp
-        )
-    }
-
 }

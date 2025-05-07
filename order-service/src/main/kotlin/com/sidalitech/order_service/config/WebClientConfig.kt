@@ -1,6 +1,7 @@
 package com.sidalitech.order_service.config
 
 
+import org.springframework.beans.factory.annotation.Qualifier
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
 import org.springframework.http.HttpHeaders
@@ -12,23 +13,43 @@ import java.util.*
 @Configuration
 class WebClientConfig {
 
+//    @Bean
+//    fun webClientAuth(): WebClient {
+//        return WebClient.builder()
+//            .baseUrl("http://localhost:8081")
+//            .defaultCookie("Key", "Value")
+//            .defaultHeader(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_JSON_VALUE)
+//            .defaultUriVariables(Collections.singletonMap("url", "http://localhost:8081"))
+//            .build()
+//    }
+//    @Bean
+//    @Qualifier("ProductService")
+//    fun webClientProduct(): WebClient {
+//        return WebClient.builder()
+//            .baseUrl("http://localhost:8084")
+//            .defaultCookie("Key", "Value")
+//            .defaultHeader(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_JSON_VALUE)
+//            .defaultUriVariables(Collections.singletonMap("url", "http://localhost:8084"))
+//            .build()
+//    }
+//
+//    @Bean
+//    @Qualifier("CartService")
+//    fun webClientCart(): WebClient {
+//        return WebClient.builder()
+//            .baseUrl("http://localhost:8085")
+//            .defaultCookie("Key", "Value")
+//            .defaultHeader(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_JSON_VALUE)
+//            .defaultUriVariables(Collections.singletonMap("url", "http://localhost:8085"))
+//            .build()
+//    }
+
     @Bean
-    fun webClientAuth(): WebClient {
+    fun webClientBuilder(): WebClient.Builder {
         return WebClient.builder()
-            .baseUrl("http://localhost:8081")
             .defaultCookie("Key", "Value")
             .defaultHeader(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_JSON_VALUE)
-            .defaultUriVariables(Collections.singletonMap("url", "http://localhost:8081"))
-            .build()
     }
-    @Bean
-    fun webClientProduct(): WebClient {
-        return WebClient.builder()
-            .baseUrl("http://localhost:8084")
-            .defaultCookie("Key", "Value")
-            .defaultHeader(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_JSON_VALUE)
-            .defaultUriVariables(Collections.singletonMap("url", "http://localhost:8084"))
-            .build()
-    }
+
 
 }
